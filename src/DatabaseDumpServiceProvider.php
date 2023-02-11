@@ -3,7 +3,7 @@
 namespace s4urp8n\DatabaseDump;
 
 use Illuminate\Support\ServiceProvider;
-use s4urp8n\DatabaseDump\Command\Dump\Mysql;
+use s4urp8n\DatabaseDump\Command\Dump;
 
 class DatabaseDumpServiceProvider extends ServiceProvider
 {
@@ -15,7 +15,7 @@ class DatabaseDumpServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Mysql::class
+                Dump::class
             ]);
         }
     }
