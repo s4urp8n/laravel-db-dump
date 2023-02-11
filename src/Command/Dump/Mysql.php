@@ -1,6 +1,6 @@
 <?php
 
-namespace s4urp8n\MysqlDump\Command\Dump;
+namespace s4urp8n\DatabaseDump\Command\Dump;
 
 use Illuminate\Console\Command;
 

@@ -3,7 +3,7 @@
 namespace s4urp8n\DatabaseDump;
 
 use Illuminate\Support\ServiceProvider;
-use s4urp8n\MysqlDump\Command\Dump\Mysql;
+use s4urp8n\DatabaseDump\Command\Dump\Mysql;
 
 class DatabaseDumpServiceProvider extends ServiceProvider
 {
