@@ -1,0 +1,51 @@
+{
+  "name": "s4urp8n/laravel-db-dump",
+  "description": "Create dumps of DBs",
+  "license": "MIT",
+  "keywords": [
+    "db",
+    "dump",
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "Alexander Tarasov",
+      "email": "s4urp8n@yandex.ru"
+    }
+  ],
+  "homepage": "https://github.com/s4urp8n/laravel-db-dump",
+  "require": {
+    "php": "^7.0",
+    "illuminate/console": "^7.30",
+    "illuminate/support": "^7.30"
+  },
+  "conflict": {
+  },
+  "suggest": {
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "s4urp8n\\DatabaseDump\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+    }
+  },
+  "config": {
+    "allow-plugins": {
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "s4urp8n\\DatabaseDump\\DatabaseDumpServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+  }
+}
