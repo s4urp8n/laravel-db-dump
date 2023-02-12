@@ -19,7 +19,21 @@ php artisan db:dump
 ```
 
 ## Result
-
-![Alt text](result.png?raw=true)
-
-
+```
+<project_dir>/storage
+└───database
+    └───dumps
+        └───2023_02_12_09_31_13
+            └───mysql
+                ├───admin
+                │       categories.sql
+                │       users.sql
+                │
+                ├───geoip
+                │       builds.sql
+                │       company.sql
+                │
+                └───gtf
+                        access_list.sql
+                        access_log.sql
+```
