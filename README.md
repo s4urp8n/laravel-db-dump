@@ -1,5 +1,7 @@
 # Database sql dump creator for laravel
 
+❗ Currently supported only MySQl
+
 ## Installation
 
 ```
