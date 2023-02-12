@@ -58,7 +58,7 @@ class Dump extends Command
 
     private function processConnectionDb(string &$connection, string &$db)
     {
-        $tablesAndViews = DB::connection($connection)->select(sprintf("show full tables from %s", $db));
+        $tablesAndViews = DB::connection($connection)->select(sprintf("show full tables from `%s`", $db));
         $tablesAndViews = array_map(function ($value) {
             return array_values((array)$value);
         }, $tablesAndViews);
