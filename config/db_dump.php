@@ -25,5 +25,5 @@ return [
     /**
      * Directory to store dumps
      */
-    'directory' => database_path('dumps'),
+    'directory' => storage_path('database/dumps'),
 ];
