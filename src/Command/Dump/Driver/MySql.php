@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 
 class MySql extends Base
 {
-    public function detectMysqlBinary(&$connection, &$file)
+    public function detectMysqlBinary(&$connection, $file)
     {
         $basedir = (array)DB::connection($connection)->selectOne('show variables where variable_name=\'basedir\'');
         $basedir = array_values($basedir)[1] ?? null;
