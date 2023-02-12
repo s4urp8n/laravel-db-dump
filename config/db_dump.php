@@ -17,9 +17,10 @@ return [
 
     ],
     'black-list' => [ //exclude tables listed here
-        '#.*\.information_schema.*#',
-        '#.*\.performance_schema.*#',
-        '#.*\.mysql.*#',
+        '#.*\.information_schema\..*#',
+        '#.*\.performance_schema\..*#',
+        '#.*\.mysql\..*#',
+        '#.*\.sys\..*#',
     ],
 
     /**
