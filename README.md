@@ -25,15 +25,11 @@ php artisan db:dump
 <project_dir>/storage
 └───database
     └───dumps
-        └───2023_02_12_09_31_13
-            └───mysql
-                ├───admin
-                │       categories.sql
+        └───2023_02_12_09_31_13          <-- date + time
+            └───mysql                    <-- connection
+                ├───admin                <-- database
+                │       categories.sql   <-- table
                 │       users.sql
-                │
-                ├───geoip
-                │       builds.sql
-                │       company.sql
                 │
                 └───gtf
                         access_list.sql
