@@ -20,3 +20,6 @@ php artisan db:dump
 
 ## Result
 
+![Alt text](result.png?raw=true)
+
+
