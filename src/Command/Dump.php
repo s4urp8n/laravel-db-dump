@@ -171,7 +171,7 @@ class Dump extends Command
             throw new \Exception("Dumps save dir " . $path . " is not writable");
         }
 
-        return $path . DIRECTORY_SEPARATOR . $table;
+        return $path . DIRECTORY_SEPARATOR . $table . '.sql';
     }
 
 
