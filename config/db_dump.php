@@ -27,4 +27,18 @@ return [
      * Directory to store dumps
      */
     'directory' => storage_path('database/dumps'),
+
+    'mysql-dump-params' => [
+        '--add-drop-table',
+        '--add-locks',
+        '--disable-keys',
+        '--extended-insert',
+        '--insert-ignore',
+        '--quote-names',
+        '--routines',
+        '--verbose',
+        '--triggers',
+        '--events',
+        '--force',
+    ]
 ];

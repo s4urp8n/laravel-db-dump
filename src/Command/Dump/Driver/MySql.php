@@ -33,10 +33,11 @@ class MySql extends Base
 
         $username = config('database.connections.' . $connection . '.username');
         $password = config('database.connections.' . $connection . '.password');
+        $params = implode(' ', config('db_dump.mysql-dump-params'));
 
         putenv('MYSQL_PWD=' . $password);
 
-        $cmd = sprintf('%s --add-drop-table --add-locks --disable-keys --extended-insert --insert-ignore --quote-names --routines --verbose --triggers --events --force -u%s %s %s > %s',
+        $cmd = sprintf('%s ' . $params . ' -u%s %s %s > %s',
             escapeshellarg($mysqldump),
             escapeshellarg($username),
             escapeshellarg($database),
